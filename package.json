@@ -1,0 +1,19 @@
+{
+  "name": "web-components",
+  "version": "0.0.1",
+  "description": "Repositório para estudo de Web Components",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdnilsonRobert/web-components.git"
+  },
+  "author": "EdnilsonRobert <frontend@ednilsonrobert.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdnilsonRobert/web-components/issues"
+  },
+  "homepage": "https://github.com/EdnilsonRobert/web-components#readme"
+}
