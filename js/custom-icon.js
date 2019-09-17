@@ -3,22 +3,39 @@ class CustomIcon extends HTMLElement {
     super();
 
     let type = this.getAttribute('type');
-    let types = ['success', 'error', 'warning'];
-
+    // let types = ['success', 'error', 'warning'];
     // console.log(types.includes(type));
 
-    if (type == 'success') {
-      this.innerHTML = `<svg width="128" height="128"><rect x="4" y="4" width="120" height="120" fill="olivedrab" /></svg>`;
+    // if (type == 'success') {
+    //   this.innerHTML = `<svg width="128" height="128"><rect x="4" y="4" width="120" height="120" fill="olivedrab" /></svg>`;
+    // }
+    // if (type == 'error') {
+    //   this.innerHTML = `<svg height="128" width="128"><circle cx="50%" cy="50%" r="60" fill="crimson" /></svg>`;
+    // }
+    // if (type == 'warning') {
+    //   this.innerHTML = `<svg height="128" width="128"><polygon points="64,4 124,124 4,124" fill="gold" /></svg>`;
+    // }
+    // if (!type) {
+    //   this.innerHTML = `<p>O tipo escolhido para o ícone é inválido.</p>`;
+    // }
+
+    let types = {
+      success: {
+        icon: `<svg width="128" height="128"><rect x="4" y="4" width="120" height="120" fill="olivedrab" /></svg>`
+      },
+      error: {
+        icon: `<svg height="128" width="128"><circle cx="50%" cy="50%" r="60" fill="crimson" /></svg>`
+      },
+      warning: {
+        icon: `<svg height="128" width="128"><polygon points="64,4 124,124 4,124" fill="gold" /></svg>`
+      }
     }
-    if (type == 'error') {
-      this.innerHTML = `<svg height="128" width="128"><circle cx="50%" cy="50%" r="60" fill="crimson" /></svg>`;
-    }
-    if (type == 'warning') {
-      this.innerHTML = `<svg height="128" width="128"><polygon points="64,4 124,124 4,124" fill="gold" /></svg>`;
-    }
-    if (!type) {
+    if (type in types) {
+      this.innerHTML = types[type].icon;
+    } else {
       this.innerHTML = `<p>O tipo escolhido para o ícone é inválido.</p>`;
     }
+
   }
 }
 
