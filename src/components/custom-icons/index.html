@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Custom Icons | Web Components</title>
+
+    <!-- Robots -->
+    <meta name="description" content="Projeto para estudos de Web Components">
+    <meta name="keywords"    content="desenvolvimento, components">
+
+    <!-- Humanos -->
+    <meta name="author" content="EdnilsonRobert">
+
+    <!-- Navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#dc143c">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <!-- Folhas de estilo -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style media="screen">
+        custom-icon { display: inline-block; margin: 0 1.2rem; }
+        svg { display: block; max-width: 100%; height: auto; fill: #eaeded; }
+        hr { height: 1px; margin: 4.8rem 0; border: none; background-color: #95a5a6; opacity: .5; }
+
+        .red { background-color: #e74c3c; }
+        .blue { background-color: #3498db; }
+        .green { background-color: #2ecc71; }
+        .gold { background-color: #f1c40f; }
+        .gray { background-color: #95a5a6; }
+
+        .rounded { border-radius: 1.2rem; }
+        .circle { border-radius: 50%; }
+
+        .size-sm { width: 2.4rem; height: 2.4rem; }
+        .size-md { width: 4.8rem; height: 4.8rem; }
+        .size-lg { width: 7.2rem; height: 7.2rem; }
+        .size-xl { width: 9.6rem; height: 9.6rem; }
+        .size-sm svg { width: 2.4rem; height: 2.4rem; }
+        .size-md svg { width: 4.8rem; height: 4.8rem; }
+        .size-lg svg { width: 7.2rem; height: 7.2rem; }
+        .size-xl svg { width: 9.6rem; height: 9.6rem; }
+    </style>
+
+    <!-- Manifesto -->
+
+    <!-- Diversos -->
+    <!-- <link rel="canonical" href="http://localhost:3000"> -->
+</head>
+
+<body>
+    <main>
+
+        <custom-icon type="info" color="blue"></custom-icon>
+        <custom-icon type="success" color="green"></custom-icon>
+        <custom-icon type="error" color="red"></custom-icon>
+        <custom-icon type="warning" color="gold"></custom-icon>
+
+        <hr>
+
+        <custom-icon type="info" shape="square"></custom-icon>
+        <custom-icon type="success" shape="rounded"></custom-icon>
+        <custom-icon type="error" shape="circle"></custom-icon>
+        <custom-icon type="warning"></custom-icon>
+
+        <hr>
+
+        <custom-icon type="info" size="sm"></custom-icon>
+        <custom-icon type="success" size="md"></custom-icon>
+        <custom-icon type="error" size="lg"></custom-icon>
+        <custom-icon type="warning" size="xl"></custom-icon>
+
+        <hr>
+
+        <custom-icon type="info" color="blue" size="sm"></custom-icon>
+        <custom-icon type="success" color="green" size="md" shape="rounded"></custom-icon>
+        <custom-icon type="error" color="red" size="lg" shape="circle"></custom-icon>
+        <custom-icon type="warning" color="gold" size="xl"></custom-icon>
+
+    </main>
+</body>
+
+<script src="./custom-icon.js"></script>
+
+</html>
